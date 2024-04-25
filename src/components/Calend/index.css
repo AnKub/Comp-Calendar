@@ -1,0 +1,74 @@
+.calendar {
+background: #02262c;
+padding: 10px 8px;
+border-radius: 30px;
+box-shadow: 0 0 5px rgba(110, 184, 224, 0.973);
+}
+
+.calendar header {
+display: flex;
+justify-content: center;
+margin-bottom: 8px;
+}
+
+.calendar header button,
+.calendar header select {
+margin: 0 4px ;
+color: #85dff1;
+font-weight: 600;
+background-color: #02262c;
+border: 1.5px solid #85dff1;
+border-radius: 30px;
+}
+
+
+.calendar table{
+table-layout: flex;
+border-collapse: separate;
+border-spacing: 0;
+margin: auto;
+
+}
+
+.calendar th{
+vertical-align: middle;
+text-align: center;
+height: 36px;
+color:#60fafa;
+font-size: 16px;
+letter-spacing: 1px;
+padding: 5px;
+}
+
+.calendar .day {
+padding: 4px 8px;
+vertical-align: middle;
+text-align: center;
+border: 2px solid transparent;
+color: #eaeaea;
+}
+.day {
+  transition: transform 0.2s ease-in-out; /* Плавное изменение размера */
+}
+.calendar .day:hover {
+background-color: #59cfe77f;
+color:#60fafa;
+cursor: pointer;
+font-weight: 500;
+font-size: 18px;
+box-shadow: 0 0 5px rgba(110, 184, 224, 0.973);
+border-radius: 50px;
+transform: scale(1.1);
+}
+
+.calender .day.selected{
+border: 2px solid dodgerblue;
+}
+
+.calendar .day.today:hover{
+background-color: #007b8e;
+}
+
+.calendar .day.today.selected {
+border: 2px solid rgb(254, 254, 254);
+}
